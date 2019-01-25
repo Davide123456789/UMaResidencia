@@ -52,14 +52,14 @@ header {
     }
 }
 
-main {
+.main-welcome {
     background-image: url("../img/santorini.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
 
-    .main-welcome {
+    .main-inicio {
         background-color: #f9f9f9b8;
         text-align: left;
         position: absolute;
@@ -78,6 +78,88 @@ main {
         }
     }
 }
+
+.main-cultura {
+  background-image: url("../img/santorini3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  .cultura {
+      background-color: #f9f9f9b8;
+      text-align: left;
+      position: absolute;
+      bottom: 200px;
+      padding: 0 30px;
+
+      h1 {
+          font-size: 2.5rem;
+          color: #4783c3;
+      }
+
+      i {
+          font-size: 2rem;
+          color: #4783c3;
+          padding-bottom: 20px;
+      }
+  }
+}
+
+.main-galeria {
+  background-image: url("../img/santorini2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  .galeria {
+      background-color: #f9f9f9b8;
+      text-align: left;
+      position: absolute;
+      bottom: 200px;
+      padding: 0 30px;
+
+      h1 {
+          font-size: 2.5rem;
+          color: #4783c3;
+      }
+
+      i {
+          font-size: 2rem;
+          color: #4783c3;
+          padding-bottom: 20px;
+      }
+  }
+}
+
+.main-sobre {
+  background-image: url("../img/santorini4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  .sobre {
+      background-color: #f9f9f9b8;
+      text-align: left;
+      position: absolute;
+      bottom: 200px;
+      padding: 0 30px;
+
+      h1 {
+          font-size: 2.5rem;
+          color: #4783c3;
+      }
+
+      i {
+          font-size: 2rem;
+          color: #4783c3;
+          padding-bottom: 20px;
+      }
+  }
+}
+
 
 .teste2 {
     width: 70%;
@@ -245,7 +327,6 @@ main {
 
 #myImg:hover {opacity: 0.7;}
 
-
 .modal {
   display: none; 
   position: fixed; 
@@ -260,14 +341,12 @@ main {
   background-color: rgba(0,0,0,0.9); 
 }
 
-
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
 }
-
 
 #caption {
   margin: auto;
@@ -280,7 +359,6 @@ main {
   height: 150px;
 }
 
-
 .modal-content, #caption { 
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -290,7 +368,6 @@ main {
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
-
 
 .close {
   position: absolute;
@@ -309,13 +386,133 @@ main {
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
 
+body {
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 
+      {width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+}
+
+head{
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+}
 .foster{
     background: #fff
 }
