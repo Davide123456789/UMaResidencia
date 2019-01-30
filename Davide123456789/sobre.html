@@ -1,101 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>UMa Residências - Grécia</title>
-    
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/_layout.scss">
-    
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="shortcut icon" href="favicon.ico">
-    
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    </head>
-    
-    <body>
-    
-        <header>
-            <nav>
-                <ul class="navbar-bandeira">
-                    <a href="index.html">
-                        <h3>Visit<br>Greece</h3>
-                    </a>
-                </ul>
-    
-                <ul class="navbar-nav">
-                    <li><a href="cultura.html">Cultura</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+</head>
 
-<main class="main-sobre">
-    <div class="sobre">
-        <h1>Sobre</h1>
+<body>
 
-        <a href="#teste2">
-            <i class="fas fa-angle-down"></i>
-        </a>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="index.html" class="w3-bar-item w3-button">
+                <b>Visit</b>Grécia</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="cultura.html" class="w3-bar-item w3-button">Cultura</a>
+                <a href="galeria.html" class="w3-bar-item w3-button">Galeria</a>
+                <a href="sobre.html" class="w3-bar-item w3-button">Sobre</a>
+
+            </div>
+        </div>
     </div>
-</main>
 
-<div class="teste2" id="teste2">
-    <div class="wrapper">
-        <h1>Grécia</h1>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="assets/img/santorini3.jpg" alt="Architecture" width="1500" height="800">
+    </header>
 
-        <p>A Grécia está situada no sudeste da Europa, no sul da península balcánica.
-            A Grécia é circulada ao norte pela Bulgária, pelo Macedônia e pela Albânia; ao oeste pelo
-            mar Jônico; ao sul pelo mar Mediterrâneo e a oeste pelo mar Egeu. O país alcança
-            aproximadamente
-            em latitude de 35° 00′ a 42° 00′ N e em longitude de 19° 00 a 28° 30′ E.
-            Em consequência, possui variação climática considerável, como discutido abaixo.</p>
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+        
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="sobre">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sobre</h3>
+                <p>Grécia, oficialmente República Helênica ou Helénica e conhecida desde a antiguidade como Hélade, é um país localizado no
+                sul da Europa. De acordo com dados do censo de 2011, a população grega é de cerca de 11 milhões de pessoas. Atenas é a capital
+                e a maior cidade do país.O país está estrategicamente localizado no cruzamento entre a Europa, a Ásia, o Oriente Médio e
+                a ÁfricaTem fronteiras terrestres com a Albânia a noroeste, com a República da Macedônia e a Bulgária ao norte
+                e com a Turquia no nordeste. O país é composto por nove regiões geográficas: Macedônia, Grécia Central, Peloponeso, Tessália,
+                Epiro, Ilhas Egeias (incluindo o Dodecaneso e Cíclades), Trácia, Creta e Ilhas Jônicas. O Mar Egeu fica a leste do continente,
+                o Mar Jônico a oeste e o Mar Mediterrâneo ao sul. A Grécia tem a 11ª maior costa do mundo, com 13 676 quilômetros de comprimento,
+                com um grande número de ilhas (cerca de 1 400, das quais 227 são habitadas). Oitenta por cento do país é composto por montanhas,
+                das quais o Monte Olimpo é a mais elevada, a 2 917 metros de altitude.
+                </p>
+            </div>
+        
+        <!-- Image of location/map -->
+        <div class="w3-container">
+            <img src="assets/img/Greece_in_European_Union.png" class="w3-image" style="width:80%">
+        </div>
 
+        <!-- End page content -->
     </div>
-</div>
-<footer>
-    <ul>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-
-    </ul>
-</footer>
 
 
+            <!-- Footer -->
+            <footer class="w3-center w3-black w3-padding-16">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"></a>
+                            <i class="fab fa-facebook-square"></i>
+    
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/main.js"></script>
 </body>
-<script>
-var modal = document.getElementById('myModal');
 
-
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
-captionText.innerHTML = this.alt;
-}
-
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-modal.style.display = "none";
-}
-</script>
 </html>
